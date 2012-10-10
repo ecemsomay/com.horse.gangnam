@@ -3,6 +3,7 @@ package com.horse.geoloc.mapview;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Toast;
 
 public class LoginActivity extends Activity {
 
@@ -10,6 +11,11 @@ public class LoginActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+       
+        
+        Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Wilkommen", Toast.LENGTH_SHORT).show();
+        
     }
 
     @Override
