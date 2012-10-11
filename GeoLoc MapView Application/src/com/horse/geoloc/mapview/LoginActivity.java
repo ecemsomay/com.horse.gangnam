@@ -15,6 +15,8 @@ public class LoginActivity extends Activity {
         
         Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(), "Wilkommen", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "nagihan", Toast.LENGTH_SHORT).show();
+        
         
     }
 
