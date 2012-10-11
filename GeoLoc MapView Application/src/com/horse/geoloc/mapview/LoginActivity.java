@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends Activity {
-	EditText username,password;
-	Button ok;
+	EditText UserNameET,PasswordET;
+	Button LoginBT;
 	
 	String usernm="nagi";
 	String pss="adem";
@@ -23,14 +23,14 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
        
         
-        username=(EditText)findViewById(R.id.UserNameET);
-        password=(EditText)findViewById(R.id.PasswordET);
-        ok=(Button)findViewById(R.id.LoginBT);
-        ok.setOnClickListener(new View.OnClickListener() {
+        UserNameET=(EditText)findViewById(R.id.UserNameET);
+        PasswordET=(EditText)findViewById(R.id.PasswordET);
+        LoginBT=(Button)findViewById(R.id.LoginBT);
+        LoginBT.setOnClickListener(new View.OnClickListener() {
 			
 			public void onClick(View v) {
 				try{
-					if(username.getText().toString()==usernm && password.getText().toString()==pss)
+					if(UserNameET.getText().toString()==usernm && PasswordET.getText().toString()==pss)
 					{
 					   Toast.makeText(getApplicationContext(),"Correct!", Toast.LENGTH_SHORT).show();
 						
@@ -43,7 +43,7 @@ public class LoginActivity extends Activity {
 				}
 				catch(Exception e)
 				{
-					username.setText(e.toString());
+					UserNameET.setText(e.toString());
 					
 				}
 
